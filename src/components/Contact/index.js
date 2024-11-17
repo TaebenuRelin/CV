@@ -1,22 +1,28 @@
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa"; // Import ikon dari react-icons
+
 const Contact = () => {
   return (
     <section id="contact" className="contact container">
       <h2 className="section-title">Get in Touch</h2>
       <div className="contact-info">
-        <p>Feel free to reach out to me via:</p>
-        <ul>
-          <li>
-            <a href="mailto:john.doe@example.com">
-              Email: john.doe@example.com
+        <p className="contact-description">
+          Feel free to reach out to me through the following channels:
+        </p>
+        <ul className="contact-list">
+          <li className="contact-item">
+            <a href="mailto:relintaebenu@gmail.com" className="contact-link">
+              <FaEnvelope className="contact-icon" /> Email:
+              relintaebenu@gmail.com
             </a>
           </li>
-          <li>
+          <li className="contact-item">
             <a
               href="https://wa.me/1234567890"
               target="_blank"
               rel="noopener noreferrer"
+              className="contact-link"
             >
-              WhatsApp: +1 234 567 890
+              <FaWhatsapp className="contact-icon" /> WhatsApp: 0821-4571-5515
             </a>
           </li>
         </ul>
@@ -24,4 +30,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;
